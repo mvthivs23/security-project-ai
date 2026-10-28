@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "/home/mathias/.nvm/versions/node/v24.14.1/bin/npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+---
+description: Reglas permanentes del proyecto Security Tech AI
+alwaysApply: true
+---
+
+# Security Tech AI (versión personal) · reglas del proyecto
+
+- Lee `AGENTS.md` antes de cualquier tarea: es el contexto completo y el alcance cerrado del proyecto.
+- Antes de crear, modificar o borrar archivos, instalar dependencias o ejecutar comandos que cambien algo, explica qué harás y espera mi confirmación explícita.
+- No agregues funcionalidades, endpoints, librerías ni configuraciones que no estén en `AGENTS.md`. Si algo falta, propónlo y espera.
+- `reference/security-tech-ai.html` es la fuente de verdad del flujo, la lógica, los textos y el diseño. No lo modifiques.
+- El plan base por reglas siempre se aplica. La IA solo recomienda, nunca quita controles y nada se aplica sin confirmación humana. Sin IA configurada, la app funciona completa.
+- La IA es solo OpenRouter, con la URL fija en el código; el modelo se elige con `AI_MODEL`.
+- Ninguna clave de IA llega al navegador. La API no acepta prompts libres: recibe datos estructurados y el backend arma el prompt.
+- Anonimiza y sanitiza en el servidor antes de enviar a la IA; valida toda salida de la IA contra esquema y catálogo.
+- Logs sin contexto, documentos ni respuestas de la IA. Tests sin llamadas reales a proveedores.
+- Solo datos sintéticos en tests y ejemplos. Nunca datos reales de clientes.
+- Todo cambio lleva tests. No des una tarea por terminada si fallan.
+- Código en inglés; interfaz y documentación en español de Chile.
